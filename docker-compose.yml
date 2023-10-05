@@ -8,6 +8,8 @@ services:
       dockerfile: Dockerfile
     image: nginx-endpoint
     restart: always
+    networks:
+      - nextjs-docker_frontend
     ports:
       - "80:80"
       - "443:443"
